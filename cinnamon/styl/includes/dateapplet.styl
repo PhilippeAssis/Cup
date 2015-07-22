@@ -1,0 +1,105 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Date applet
+ * ===================================================================*/
+.calendar
+  padding: .4em 1.75em
+  spacing-rows: 0px
+  spacing-columns: 0px
+
+.calendar-month-label
+  color: #333
+  font-size: 9pt
+  padding-bottom: 8px
+  padding-top: 8px
+
+.calendar-change-month-back
+  width: 18px
+  height: 12px
+  background-image: url("calendar-arrow-left.svg")
+  border-radius: 4px
+
+.calendar-change-month-back:rtl
+  background-image: url("calendar-arrow-right.svg")
+
+// .calendar-change-month-back:hover
+//
+// .calendar-change-month-back:active
+
+.calendar-change-month-forward
+  width: 18px
+  height: 12px
+  background-image: url("calendar-arrow-right.svg")
+  border-radius: 4px
+
+.calendar-change-month-forward:rtl
+  background-image: url("calendar-arrow-left.svg")
+//
+// .calendar-change-month-forward:hover
+//
+// .calendar-change-month-forward:active
+//
+.datemenu-date-label
+  padding: .4em 1.75em
+  font-size: 9pt
+  color: #333
+  text-align: center
+
+.calendar-day-base
+  font-size: 9pt
+  text-align: center
+  width: 2.25em
+  height: 1.5em
+//
+.calendar-day-base:hover
+  $textColorBase()
+  $backgroundBase(0.8)
+
+.calendar-day-base:active
+  $textColorBase()
+  $backgroundBase(0.8)
+
+.calendar-day-heading
+  color: #333
+  padding-top: 1em
+
+.calendar-week-number
+  color: #333
+  font-weight: bold
+
+/* Hack used in lieu of border-collapse - see calendar.js */
+.calendar-day:ltr
+  $borderRadius()
+  border-top-width: 0
+  border-left-width: 0
+
+.calendar-day-top:ltr
+  border-top-width: 1px
+
+.calendar-day-left:ltr
+  border-left-width: 1px
+
+.calendar-day:rtl
+  $borderRadius()
+  border-top-width: 0
+  border-right-width: 0
+
+.calendar-day-top:rtl
+  border-top-width: 1px
+
+.calendar-day-left:rtl
+  border-right-width: 1px
+//
+// .calendar-work-day
+//
+// .calendar-nonwork-day
+//
+.calendar-today
+  $backgroundBase(0.8)
+  $textColorBase()
+
+.calendar-other-month-day
+  color: #aaa
+
+.calendar-day-with-events
+  font-weight: bold

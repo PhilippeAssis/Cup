@@ -1,0 +1,94 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Panel (panel.js)
+ * ===================================================================*/
+#panel
+  color: #fff
+  text-shadow: black 1px 1px 2px 0px
+  font-size: 9pt
+  font-weight: normal
+  height: 35px
+  $backgroundBase()
+
+
+#panelLeft, #panelCenter
+  spacing: 4px
+
+#panelLeft:dnd, #panelCenter:dnd, #panelRight:dnd
+  $backgroundBase()
+
+#panelLeft:ltr, #panelLeft:rtl
+  padding-right: 4px
+
+#panelRight:ltr, #panelRight:rtl
+  padding-left: 0px
+  spacing: 0px
+
+.panel-top, .panel-bottom
+
+.panel-status-button
+  -natural-hpadding: 5px
+  -minimum-hpadding: 5px
+  font-weight: bold
+  color: #fff
+  height: 30px
+
+.panel-status-button:hover
+  color: white
+
+.system-status-icon
+  padding-left: 0px
+  padding-right: 0px
+  spacing: 0px
+  margin: 0px
+
+.panel-corner
+  -panel-corner-radius: 0px
+  -panel-corner-background-color: black
+  -panel-corner-inner-border-width: 2px
+  -panel-corner-inner-border-color: transparent
+  -panel-corner-outer-border-width: 1px
+  -panel-corner-outer-border-color: #536272
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus
+  -panel-corner-inner-border-color: rgba(255,255,255,0.8)
+
+#appMenu
+  spacing: 4px
+
+.panel-button #appMenuIcon
+  app-icon-bottom-clip: 1px
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon
+  app-icon-bottom-clip: 2px
+
+.panel-button
+  -natural-hpadding: 6px
+  -minimum-hpadding: 2px
+  font-weight: bold
+  color: #fff
+  text-shadow: black 1px 1px 2px 0px
+
+.panel-button:hover
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon
+  icon-shadow: black 1px 1px 2px 0px
+
+.panel-menu
+  -boxpointer-gap: 0px
+
+.popup-menu-item-dot
+
+.system-status-icon
+  icon-size: 16px
+  icon-shadow: black 1px 1px 2px 0px

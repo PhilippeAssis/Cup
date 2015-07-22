@@ -1,0 +1,81 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Looking Glass
+ * ===================================================================*/
+#LookingGlassDialog
+  $backgroundBase()
+  spacing: 4px
+  padding: 4px
+  border: 2px solid grey
+  border-radius: 4px
+  $textColorBase()
+
+#LookingGlassDialog > #Toolbar
+  border: 1px solid grey
+  border-radius: 4px
+
+#LookingGlassDialog .labels
+  spacing: 4px
+
+#LookingGlassDialog .notebook-tab
+  padding: 2px
+
+#LookingGlassDialog .notebook-tab:hover
+  $textColorBaseColor()
+
+#LookingGlassDialog .notebook-tab:selected
+  border: 1px solid $textColor
+  border-radius: 4px
+  padding: 5px
+
+#LookingGlassDialog .lg-inspector-title
+  font-weight: bold
+  padding-bottom: 8px
+
+.lg-dialog StLabel
+  $textColorBaseColor()
+
+.lg-dialog StEntry
+  $textColorBaseColor()
+  border-radius: 4px
+
+.lg-obj-inspector-button:hover
+  border: 1px solid lightness($textColor,25%)
+
+.lg-dialog .cinnamon-link
+  color: $link
+
+.lg-dialog .cinnamon-link:hover
+  color: $linkHover
+
+#LookingGlassDialog StBoxLayout#EvalBox
+  padding: 4px
+  spacing: 4px
+
+#LookingGlassDialog StBoxLayout#ResultsArea
+  spacing: 4px
+
+#lookingGlassExtensions
+  padding: 4px
+
+.lg-extension-list
+  padding: 4px
+  spacing: 6px
+
+.lg-extension
+  border: 1px solid $textColor
+  border-radius: 4px
+  padding: 4px
+
+.lg-extension-name
+  font-weight: bold
+
+.lg-extension-meta
+  spacing: 6px
+
+#LookingGlassPropertyInspector
+  $backgroundBase()
+  border: 2px solid grey
+  border-radius: 4px
+  padding: 6px
+  $textColorBase()

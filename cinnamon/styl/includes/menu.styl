@@ -1,0 +1,175 @@
+// main: ../cinnamon.styl
+/* ###################################################################
+ * Cinnamon Specific Section
+ * ###################################################################*/
+/* ===================================================================
+ * Menu (menu.js)
+ * ===================================================================*/
+/* Main menu title */
+.menu-favorites-box
+  margin: auto
+  padding: 10px
+  /*$borderBase();*/
+  border-radius: 3px
+  transition-duration: 300
+
+.menu-favorites-button
+  padding-top: 10px
+  padding-left: 10px
+  padding-right: 10px
+  padding-bottom: 10px
+
+.menu-favorites-button:hover
+  $textColorBase()
+  background-color: #d7d7d7
+  border-radius: 2px
+
+.menu-places-box
+  margin: auto
+  padding: 10px
+  border: 0px solid #666
+
+.menu-places-button
+  padding-top: 10px
+  padding-left: 10px
+  padding-right: 10px
+  padding-bottom: 10px
+
+.menu-categories-box
+  padding-top: 10px
+  padding-left: 30px
+  padding-right: 30px
+  padding-bottom: 10px
+
+.menu-applications-inner-box
+  padding-top: 10px
+  padding-left: 10px
+  padding-right: 10px
+  padding-bottom: 0px
+
+.menu-applications-outer-box
+  padding-top: 10px
+  padding-left: 10px
+  padding-right: 10px
+  padding-bottom: 0px
+
+.menu-application-button
+  padding-top: 7px
+  padding-left: 7px
+  padding-right: 7px
+  padding-bottom: 7px
+
+.menu-application-button:highlighted
+  /* This style is used in menu application buttons for applications which were newly installed */
+  font-weight: bold
+
+.menu-application-button-selected
+  padding-top: 7px
+  padding-left: 7px
+  padding-right: 7px
+  padding-bottom: 7px
+  $textColorBase()
+  background-color: #d7d7d7
+  border-radius: 2px
+
+.menu-application-button-selected:highlighted
+  /* This style is used in menu application buttons for applications which were newly installed */
+  font-weight: bold
+
+.menu-application-button-label:ltr
+  padding-left: 5px
+
+.menu-application-button-label:rtl
+  padding-right: 5px
+
+.menu-category-button
+  padding-top: 7px
+  padding-left: 7px
+  padding-right: 7px
+  padding-bottom: 7px
+
+.menu-category-button-greyed
+  padding-top: 7px
+  padding-left: 7px
+  padding-right: 7px
+  padding-bottom: 7px
+  color: #aaa
+
+.menu-category-button-selected
+  padding-top: 7px
+  padding-left: 7px
+  padding-right: 7px
+  padding-bottom: 7px
+  color: #333
+  background-color: #d7d7d7
+  border-radius: 2px
+
+.menu-category-button-label:ltr
+  padding-left: 5px
+
+.menu-category-button-label:rtl
+  padding-right: 5px
+
+.menu-category-button-button:hover
+
+/* Name and description of the currently hovered item in the menu
+ * This appears on the bottom right hand corner of the menu*/
+.menu-selected-app-box
+  padding-right: 30px
+  padding-left: 28px
+  text-align: right
+  height: 30px
+
+.menu-selected-app-box:rtl
+  padding-top: 10px
+  height: 30px
+
+.menu-selected-app-title
+  font-weight: bold
+
+.menu-selected-app-description
+  max-width: 150px
+
+.menu-search-box:ltr
+  padding-left: 30px
+
+.menu-search-box:rtl
+  padding-right: 30px
+
+#menu-search-entry
+  padding: 5px
+  border-radius: 3px
+  color: #333
+  border: 1px solid #bfbfbf
+  background-gradient-start: #eeeeee
+  background-gradient-end: #f7f7f7
+  background-gradient-direction: vertical
+  box-shadow: inset 0px 0px 0px 1px #e0e0e0
+  selection-background-color: #3d9bda
+  selected-color: #fff
+  caret-color: #333
+  caret-size: 1px
+  width: 250px
+  height: 15px
+  transition-duration: 300
+
+#menu-search-entry:focus,
+#menu-search-entry:hover
+  border: 1px solid #61ade0
+  box-shadow: inset 0px 0px 0px 1px #cde2f1
+  background-gradient-start: #eeeeee
+  background-gradient-end: #f7f7f7
+  background-gradient-direction: vertical
+  selected-color: #fff
+
+#menu-search-entry:hover
+  transition-duration: 300
+
+#menu-search-entry:focus
+
+.menu-search-entry-icon
+  icon-size: 16px
+  color: #333
+
+/* Context menu (at the moment only for favorites) */
+// .menu-context-menu

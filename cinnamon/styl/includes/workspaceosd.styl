@@ -1,0 +1,32 @@
+// main: ../cinnamon.styl
+
+/* ===================================================================
+ * Workspace OSD
+ * ===================================================================*/
+.workspace-osd
+  $backgroundBase(0.8)
+  $textColorBase()
+  $borderRadius()
+  $boxShadow()
+  font-size: 12pt
+  padding: 20px
+
+.expo-workspaces-name-entry
+  padding: 8px
+  $textColorBase()
+  border-radius: 3px
+  $backgroundBase(0.5)
+  $boxShadow()
+  selection-background-color: #d7d7d7
+  selected-color: #fff
+  caret-color: $textColor
+  caret-size: 1px
+  text-align: center
+  height: 15px
+
+.expo-workspaces-name-entry#selected
+  $backgroundBase(0.5)
+
+.expo-workspaces-name-entry:focus
+  selected-color: $textColor
+  selection-background-color: $backgroundColor

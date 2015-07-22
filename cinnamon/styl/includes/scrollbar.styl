@@ -1,0 +1,27 @@
+// main: ../cinnamon.styl:hover
+
+StScrollBar
+  padding: 0px
+
+StScrollView.vfade
+  -st-vfade-offset: 68px
+
+StScrollView StScrollBar
+  min-width: 4px
+  min-height: 4px
+
+StScrollBar StBin#trough
+  background-color: rgba(0,0,0,0)
+  border-radius: 2px
+
+StScrollBar StButton#vhandle
+  $backgroundBase(0.5)
+  border-radius: 2px
+
+StScrollBar StButton#hhandle
+  $backgroundBase(0.5)
+  border-radius: 2px
+
+StScrollBar StButton#hhandle:hover,
+StScrollBar StButton#vhandl:hover
+  display: none

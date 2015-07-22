@@ -1,0 +1,44 @@
+// main: cinnamon.styl
+@import 'functions.styl'
+
+$link = #1A46A8
+$linkHover = lightness($link,20%)
+
+
+$colorBase = rgba(42,48,68,.83)
+$colorBaseInvert = invert($colorBase)
+$backgroundColorBase = $colorBase
+$textColor = #ffffff
+
+$textColorBase()
+   color: $textColor
+
+$fontSizeBase()
+   font-size: 9pt
+
+$textShadow(blur = 0px)
+   text-shadow: black 1px 1px 2px blur
+
+$boxShadow(blur = 10px)
+   box-shadow: black 0px 0px blur 0px
+
+$backgroundBase(alpha = 0.1)
+   backgroundColor(rgba($backgroundColorBase,alpha))
+
+$borderBase($size = 1px)
+   border: $size solid $textColor
+
+$borderRadius()
+   border-radius: 3px
+
+
+
+$tooltipBackground()
+   background-color: rgba(0,0,0,0.7)
+
+$nofication_background()
+   backgroundColor($backgroundColorBase)
+
+
+
+$notification_color = #ffffff

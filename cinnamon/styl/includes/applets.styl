@@ -1,0 +1,35 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Applets (applet.js)
+ * ===================================================================*/
+.applet-separator
+  padding: 5px 4px
+
+.applet-separator-line
+  width: 1px
+  background: #aaa
+
+.applet-box
+  padding-left: 10px
+  padding-right: 10px
+  color: #fff
+  text-shadow: black 1px 1px 2px 0px
+
+.applet-box:hover
+  color: #fff
+
+.applet-label
+  font-weight: bold
+  color: #fff
+  text-shadow: black 1px 1px 2px 0px
+
+.applet-box:hover > .applet-label
+
+.applet-icon
+  color: #fff
+  icon-size: 18px
+  icon-shadow: black 1px 1px 2px 0px
+
+.applet-box:hover .applet-icon
+  /* Broken with GNOME 3.14 (icon-size is not honoured)
+ *	icon-shadow: white 0px 0px 3px;*/

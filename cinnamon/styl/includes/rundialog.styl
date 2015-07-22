@@ -1,0 +1,115 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Run dialog
+ * ===================================================================*/
+.run-dialog-label
+  font-size: 9pt
+  $textColorBase()
+  padding-bottom: 5px
+
+.run-dialog-error-label
+  font-size: 9pt
+  color: #c92e34
+
+.run-dialog-error-box
+  padding-top: 15px
+  spacing: 5px
+
+.run-dialog-completion-box
+  padding-left: 15px
+  font-size: 9pt
+
+.run-dialog-entry
+  font-size: 9pt
+  width: 23em
+  color: #333
+  padding: 5px
+  border-radius: 3px
+  border: 1px solid #61ade0
+  box-shadow: inset 0px 0px 0px 1px #cde2f1
+  background-gradient-start: #eeeeee
+  background-gradient-end: #f7f7f7
+  background-gradient-direction: vertical
+  selection-background-color: #3d9bda
+  selected-color: #fff
+  caret-color: #333
+  caret-size: 1px
+  box-shadow: inset 0px 0px 0px 1px #e0e0e0
+
+.run-dialog
+  $borderRadius()
+  padding-right: 30px
+  padding-left: 30px
+  padding-bottom: 30px
+  padding-top: 30px
+
+.lightbox
+  background-color: rgba(0,0,0,0)
+
+/* CinnamonMountOperation Dialogs */
+.cinnamon-mount-operation-icon
+  icon-size: 48px
+
+.mount-password-reask
+  color: red
+
+.show-processes-dialog,
+.mount-question-dialog
+  spacing: 24px
+
+.show-processes-dialog-subject,
+.mount-question-dialog-subject
+  font-size: 12pt
+  font-weight: bold
+  color: #666666
+  padding-top: 10px
+  padding-left: 17px
+  padding-bottom: 6px
+
+.show-processes-dialog-subject:rtl,
+.mount-question-dialog-subject:rtl
+  padding-left: 0px
+  padding-right: 17px
+
+.show-processes-dialog-description,
+.mount-question-dialog-description
+  font-size: 9pt
+  color: white
+  padding-left: 17px
+  width: 28em
+
+.show-processes-dialog-description:rtl,
+.mount-question-dialog-description:rtl
+  padding-right: 17px
+
+.show-processes-dialog-app-list
+  font-size: 9pt
+  max-height: 200px
+  padding-top: 24px
+  padding-left: 49px
+  padding-right: 32px
+
+.show-processes-dialog-app-list:rtl
+  padding-right: 49px
+  padding-left: 32px
+
+.show-processes-dialog-app-list-item
+  color: #ccc
+
+.show-processes-dialog-app-list-item:hover
+  color: white
+
+.show-processes-dialog-app-list-item:ltr
+  padding-right: 1em
+
+.show-processes-dialog-app-list-item:rtl
+  padding-left: 1em
+
+.show-processes-dialog-app-list-item-icon:ltr
+  padding-right: 17px
+
+.show-processes-dialog-app-list-item-icon:rtl
+  padding-left: 17px
+
+.show-processes-dialog-app-list-item-name
+  font-size: 9pt

@@ -1,0 +1,95 @@
+// main: ../cinnamon.styl
+
+/* ===================================================================
+ * Overview
+ * ===================================================================*/
+#overview
+  spacing: 12px
+
+.window-caption
+  $backgroundBase(0.5)
+  $textColorBase()
+  $textShadow()
+  border: 1px transparent
+  $borderRadius()
+  spacing: 25px
+  padding: 5px
+  -cinnamon-caption-spacing: 6px
+  $fontSizeBase()
+
+.window-caption#selected
+  $backgroundBase(1)
+
+.window-close
+  background-image: url("close.png")
+  $size = 32px
+  height: $size
+  width: $size
+  -cinnamon-close-overlap: 20px
+
+.window-close:rtl
+  -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5)
+
+.window-close-area
+  background-size: 400px
+  background-image: url("delete.png")
+  height: 120px
+  width: 400px
+
+.workspace-controls
+  visible-height: 32px
+  /* Amount visible before hovering */
+
+.workspace-thumbnails-background
+  border: 1px solid rgba(128, 128, 128, 0.4)
+  border-right: 0px
+  border-radius: 9px 9px 0px 0px
+  $backgroundBase(0.8)
+  padding: 8px
+
+.workspace-thumbnails-background:rtl
+  border-right: 1px
+  border-left: 0px
+  border-radius: 9px 9px 0px 0px
+
+.workspace-thumbnails
+  spacing: 50px
+
+.workspace-add-button
+  background-image: url("add.png")
+  height: 200px
+  width: 35px
+  transition-duration: 300
+  box-shadow: #000 0px 8px 12px 0px
+
+.workspace-close-button
+  background-image: url("close.png")
+  height: 32px
+  width: 32px
+  -cinnamon-close-overlap: 20px
+
+.workspace-thumbnail-indicator
+  outline: 2px solid white
+  border: 1px solid #888
+// 
+// .workspace-overview-background-shade
+//   background-color: transparent
+
+.overview-icon
+  border-radius: 4px
+  padding: 3px
+  border: 1px rgba(0,0,0,0)
+  font-size: 7.5pt
+  color: white
+  transition-duration: 100
+  text-align: center
+  $backgroundBase(0.8)
+
+.expo-background
+  $backgroundBase()
+
+.expo-workspace-thumbnail-frame
+  border: 0px
+  box-shadow: #000 0px 8px 12px 0px
+
+// .expo-workspace-thumbnail-frame#active

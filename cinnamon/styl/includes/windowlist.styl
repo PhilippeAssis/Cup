@@ -1,0 +1,31 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Window list (windowList.js)
+ * ===================================================================*/
+.window-list-box
+  spacing: 0px
+  padding-left: 0px
+  padding-top: 1px
+
+.window-list-item-label
+  width: 15em
+  min-width: 5px
+
+.window-list-item-box
+  $textColorBase
+  padding-left: 5px
+  padding-right: 5px
+  transition-duration: 100
+  border: 1px transparent
+
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus
+  font-weight: bold
+  $backgroundBase(0.8)
+
+.window-list-item-box:hover
+  $backgroundBase(0.4)
+
+.window-list-item-demands-attention
+  $backgroundBase(0.5)

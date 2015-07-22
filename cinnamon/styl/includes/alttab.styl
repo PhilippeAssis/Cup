@@ -1,0 +1,60 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Alt Tab
+ * ===================================================================*/
+#altTabPopup
+  padding: 8px
+  spacing: 10px
+
+.switcher-list
+  font-size: 9pt
+  $borderRadius()
+  $backgroundBase(0.3)
+  border: 1px solid transparent
+  color: #fff
+  padding: 10px
+  $boxShadow()
+  $textShadow(2px)
+
+.switcher-list-item-container
+  spacing: 8px
+
+.thumbnail-scroll-gradient-left,
+.thumbnail-scroll-gradient-right
+  background-color: #FFF
+
+.switcher-list .item-box
+  padding: 8px
+  $borderRadius()
+
+.switcher-list .item-box:outlined
+  padding: 6px
+
+.switcher-list .item-box:selected
+  $backgroundBase(0.6)
+  $textShadow(2px)
+
+.switcher-list .thumbnail-box
+  padding: 2px
+  spacing: 4px
+
+.switcher-list .thumbnail
+  width: 220px
+  padding: 20px
+  $textShadow(2px)
+
+// .ripple-box
+//   width: 104px
+//   height: 104px
+//   background-image: url("corner-ripple.png")
+//
+// .ripple-box:rtl
+//   background-image: url("corner-ripple.png")
+
+.switcher-arrow, .switcher-arrow:highlighted
+  border-color: invert($backgroundColorBase)
+  color: invert($backgroundColorBase)
+
+// .switcher-preview-backdrop
+//   $backgroundBase(0.3)
+//   $textShadow(2px)

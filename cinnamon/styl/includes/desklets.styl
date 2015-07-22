@@ -1,0 +1,47 @@
+// main: ../cinnamon.styl
+/* ===================================================================
+ * Desklets (desklet.js)
+ * ===================================================================*/
+.desklet
+  $textColorBase()
+
+.desklet-with-borders
+  padding: 10px
+  border: 1px solid #aaa
+  $backgroundBase()
+  $textColorBase()
+  border-radius-bottomleft: 5px
+  border-radius-bottomright: 5px
+  border-radius-topleft: 5px
+  border-radius-topright: 5px
+  box-shadow: #000 0px 8px 12px 0px
+
+.desklet-with-borders-and-header
+  padding: 10px
+  border: 1px solid #aaa
+  $backgroundBase()
+  $textColorBase()
+  border-top: 1px
+  border-radius-bottomleft: 5px
+  border-radius-bottomright: 5px
+  box-shadow: #000 0px 8px 12px 0px
+
+.desklet-header
+  border-radius-topleft: 5px
+  border-radius-topright: 5px
+  font-size: 9pt
+  border: 1px solid #aaa
+  border-bottom: 0px
+  $backgroundBase()
+  $textColorBase()
+  padding: 5px
+  box-shadow: #000 0px 8px 12px 0px
+
+.desklet-drag-placeholder
+  border: 1px solid #3d9bda
+  background-color: rgba(61, 155, 218, 0.3)
+
+/* ===================================================================
+ * Clock Desklet (desklet.js)
+ * ===================================================================*/
+// .clock-desklet-label
