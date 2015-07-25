@@ -4,29 +4,29 @@
  * Workspace OSD
  * ===================================================================*/
 .workspace-osd
-  $backgroundBase(0.8)
-  $textColorBase()
-  $borderRadius()
+  $background('base',$alphaBase())
+  color: $text()
+  border-radius: $radius()
   $boxShadow()
   font-size: 12pt
   padding: 20px
 
 .expo-workspaces-name-entry
   padding: 8px
-  $textColorBase()
+  color: $text()
   border-radius: 3px
-  $backgroundBase(0.5)
+  $background('base',$alphaBase())
   $boxShadow()
   selection-background-color: #d7d7d7
   selected-color: #fff
-  caret-color: $textColor
+  caret-color: $text()
   caret-size: 1px
   text-align: center
   height: 15px
 
 .expo-workspaces-name-entry#selected
-  $backgroundBase(0.5)
+  $background('base',$alphaBase())
 
 .expo-workspaces-name-entry:focus
-  selected-color: $textColor
-  selection-background-color: $backgroundColor
+  selected-color: $text()
+  selection-background-color: $color('base')

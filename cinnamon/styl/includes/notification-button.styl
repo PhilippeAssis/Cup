@@ -6,10 +6,10 @@
 .notification-button,
 .notification-icon-button,
 .modal-dialog-button
-  $textColorBase()
-  border: 1px solid $textColor
+  color: $text('thi')
+  border: 1px solid $border()
   border-radius: 2px
-  $backgroundBase()
+  $background('thi')
 
 .notification-button:hover,
 .notification-icon-button:hover,
@@ -18,10 +18,10 @@
 .notification-button:focus,
 .notification-icon-button:focus,
 .modal-dialog-button:focus
-  border: 1px solid lightness($textColor,20%)
+  border: 1px solid $border()
 
 .notification-button:active,
 .notification-icon-button:active,
 .modal-dialog-button:active,
 .modal-dialog-button:pressed
-  $backgroundBase()
+  $background('thi')

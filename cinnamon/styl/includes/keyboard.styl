@@ -3,7 +3,7 @@
  * On screen keyboard
  * ===================================================================*/
 #keyboard
-  $backgroundBase(0.5)
+  $background('thi',0.5)
 
 .keyboard-layout
   spacing: 10px
@@ -15,30 +15,30 @@
 .keyboard-key
   min-height: 30px
   min-width: 30px
-  $backgroundBase(0.8)
+  $background('thi',0.8)
   font-size: 20pt
   border-radius: 2px
-  border: 1px solid alpha($textColor,50%)
-  $textColorBase()
+  border: 1px solid $border()
+  color: $text()
 
 .keyboard-key:grayed
-  $textColorBase()
-  $backgroundBase()
+  color: $text()
+  $background('thi')
 
 .keyboard-key:checked,
 .keyboard-key:hover
 
 .keyboard-key:active
-  border: 1px solid $textColor
-  $backgroundBase()
+  border: 1px solid $border()
+  $background('thi')
 
 .keyboard-subkeys
-  color: $textColorBase()
+  color: $text()
   padding: 5px
-  -arrow-$borderRadius()
+  -arrow-border-radius: $radius()
   -arrow-background-color: $colorBase
   -arrow-border-width: 1px
-  -arrow-border-color: alpha($textColor,50%)
+  // -arrow-border-color: $border()
   -arrow-base: 20px
   -arrow-rise: 10px
   -boxpointer-gap: 5pxtyj

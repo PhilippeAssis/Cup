@@ -3,19 +3,21 @@
  * Panel (panel.js)
  * ===================================================================*/
 #panel
-  color: #fff
-  text-shadow: black 1px 1px 2px 0px
-  font-size: 9pt
+  color: $text('base')
+  $textShadow('base')
   font-weight: normal
   height: 35px
-  $backgroundBase()
-
+  $background('base')
 
 #panelLeft, #panelCenter
   spacing: 4px
 
-#panelLeft:dnd, #panelCenter:dnd, #panelRight:dnd
-  $backgroundBase()
+#panelLeft:dnd
+  background-color: rgba(0,172,22,.54)
+#panelCenter:dnd
+  background-color: rgba(255,252,0,.67)
+#panelRight:dnd
+  background-color: rgba(0,110,172,.54)
 
 #panelLeft:ltr, #panelLeft:rtl
   padding-right: 4px
@@ -30,11 +32,11 @@
   -natural-hpadding: 5px
   -minimum-hpadding: 5px
   font-weight: bold
-  color: #fff
+  color: $text('base')
   height: 30px
 
 .panel-status-button:hover
-  color: white
+  color: $text('base')
 
 .system-status-icon
   padding-left: 0px
@@ -48,7 +50,7 @@
   -panel-corner-inner-border-width: 2px
   -panel-corner-inner-border-color: transparent
   -panel-corner-outer-border-width: 1px
-  -panel-corner-outer-border-color: #536272
+  -panel-corner-outer-border-color: $border('base')
 
 .panel-corner:active,
 .panel-corner:overview,
@@ -70,8 +72,8 @@
   -natural-hpadding: 6px
   -minimum-hpadding: 2px
   font-weight: bold
-  color: #fff
-  text-shadow: black 1px 1px 2px 0px
+  color: $text('base')
+  $textShadow('base')
 
 .panel-button:hover
 
@@ -82,7 +84,7 @@
 .panel-button:active > .system-status-icon,
 .panel-button:checked > .system-status-icon,
 .panel-button:focus > .system-status-icon
-  icon-shadow: black 1px 1px 2px 0px
+  $iconShadow('base')
 
 .panel-menu
   -boxpointer-gap: 0px
@@ -90,5 +92,5 @@
 .popup-menu-item-dot
 
 .system-status-icon
-  icon-size: 16px
-  icon-shadow: black 1px 1px 2px 0px
+  icon-size: 18px
+  $iconShadow('base')

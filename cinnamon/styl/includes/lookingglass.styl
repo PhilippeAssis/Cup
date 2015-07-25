@@ -3,12 +3,12 @@
  * Looking Glass
  * ===================================================================*/
 #LookingGlassDialog
-  $backgroundBase()
+  $background('thi')
   spacing: 4px
   padding: 4px
   border: 2px solid grey
   border-radius: 4px
-  $textColorBase()
+  color: $text('thi')
 
 #LookingGlassDialog > #Toolbar
   border: 1px solid grey
@@ -21,10 +21,10 @@
   padding: 2px
 
 #LookingGlassDialog .notebook-tab:hover
-  $textColorBaseColor()
+  color: $text('thi')
 
 #LookingGlassDialog .notebook-tab:selected
-  border: 1px solid $textColor
+  border: 1px solid $border('thi')
   border-radius: 4px
   padding: 5px
 
@@ -33,14 +33,14 @@
   padding-bottom: 8px
 
 .lg-dialog StLabel
-  $textColorBaseColor()
+  color: $text('thi')
 
 .lg-dialog StEntry
-  $textColorBaseColor()
+  color: $text('thi')
   border-radius: 4px
 
 .lg-obj-inspector-button:hover
-  border: 1px solid lightness($textColor,25%)
+  border: 1px solid $border('thi')
 
 .lg-dialog .cinnamon-link
   color: $link
@@ -63,7 +63,7 @@
   spacing: 6px
 
 .lg-extension
-  border: 1px solid $textColor
+  border: 1px solid $border('thi')
   border-radius: 4px
   padding: 4px
 
@@ -74,8 +74,8 @@
   spacing: 6px
 
 #LookingGlassPropertyInspector
-  $backgroundBase()
+  $background('thi')
   border: 2px solid grey
   border-radius: 4px
   padding: 6px
-  $textColorBase()
+  color: $text('thi')

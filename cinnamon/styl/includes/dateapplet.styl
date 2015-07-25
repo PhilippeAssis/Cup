@@ -52,12 +52,12 @@
   height: 1.5em
 //
 .calendar-day-base:hover
-  $textColorBase()
-  $backgroundBase(0.8)
+  $text('sec')
+  $background('thi',0.8)
 
 .calendar-day-base:active
-  $textColorBase()
-  $backgroundBase(0.8)
+  $text('sec')
+  $background('thi',0.8)
 
 .calendar-day-heading
   color: #333
@@ -69,7 +69,7 @@
 
 /* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day:ltr
-  $borderRadius()
+  border-radius: $radius()
   border-top-width: 0
   border-left-width: 0
 
@@ -80,7 +80,7 @@
   border-left-width: 1px
 
 .calendar-day:rtl
-  $borderRadius()
+  border-radius: $radius()
   border-top-width: 0
   border-right-width: 0
 
@@ -95,8 +95,8 @@
 // .calendar-nonwork-day
 //
 .calendar-today
-  $backgroundBase(0.8)
-  $textColorBase()
+  $background('thi',0.8)
+  $text('sec')
 
 .calendar-other-month-day
   color: #aaa

@@ -3,33 +3,28 @@
  * Applets (applet.js)
  * ===================================================================*/
 .applet-separator
-  padding: 5px 4px
+  padding: 8px 8px
 
 .applet-separator-line
-  width: 1px
-  background: #aaa
+  width: 2px
+  background: rgba($text('base'),0.05)
 
 .applet-box
-  padding-left: 10px
-  padding-right: 10px
-  color: #fff
-  text-shadow: black 1px 1px 2px 0px
-
-.applet-box:hover
-  color: #fff
+  padding-left: 5px
+  padding-right: 5px
+  color: $text('base')
+  $textShadow('base')
 
 .applet-label
   font-weight: bold
-  color: #fff
-  text-shadow: black 1px 1px 2px 0px
 
 .applet-box:hover > .applet-label
 
 .applet-icon
-  color: #fff
+  color: $text('base')
   icon-size: 18px
-  icon-shadow: black 1px 1px 2px 0px
+  $iconShadow('base')
 
 .applet-box:hover .applet-icon
-  /* Broken with GNOME 3.14 (icon-size is not honoured)
- *	icon-shadow: white 0px 0px 3px;*/
+  // /* Broken with GNOME 3.14 (icon-size is not honoured)
+ // 	icon-shadow: white 0px 0px 3px;

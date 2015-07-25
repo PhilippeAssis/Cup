@@ -8,13 +8,13 @@
 
 .switcher-list
   font-size: 9pt
-  $borderRadius()
-  $backgroundBase(0.3)
+  border-radius: $radius()
+  $background('thi',0.3)
   border: 1px solid transparent
   color: #fff
   padding: 10px
   $boxShadow()
-  $textShadow(2px)
+  $textShadow('sec')
 
 .switcher-list-item-container
   spacing: 8px
@@ -25,14 +25,14 @@
 
 .switcher-list .item-box
   padding: 8px
-  $borderRadius()
+  border-radius: $radius()
 
 .switcher-list .item-box:outlined
   padding: 6px
 
 .switcher-list .item-box:selected
-  $backgroundBase(0.6)
-  $textShadow(2px)
+  $background('thi',0.6)
+  $boxShadow('2px')
 
 .switcher-list .thumbnail-box
   padding: 2px
@@ -41,7 +41,7 @@
 .switcher-list .thumbnail
   width: 220px
   padding: 20px
-  $textShadow(2px)
+  $textShadow('sec')
 
 // .ripple-box
 //   width: 104px
@@ -52,9 +52,9 @@
 //   background-image: url("corner-ripple.png")
 
 .switcher-arrow, .switcher-arrow:highlighted
-  border-color: invert($backgroundColorBase)
-  color: invert($backgroundColorBase)
+  border-color: invert($colorBase)
+  color: invert($colorBase)
 
 // .switcher-preview-backdrop
-//   $backgroundBase(0.3)
-//   $textShadow(2px)
+//   $background('thi',0.3)
+//   $boxShadow(2px)

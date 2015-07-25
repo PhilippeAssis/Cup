@@ -4,10 +4,10 @@
  * ===================================================================*/
 .modal-dialog
   font-size: 9pt
-  $borderRadius()
-  $backgroundBase(0.8)
-  // border: 1px solid $textColor
-  $textColorBase()
+  border-radius: $radius()
+  $background('thi',0.8)
+  // border: 1px solid $border()
+  color: $text()
   padding-right: 30px
   padding-left: 30px
   padding-bottom: 30px
@@ -20,13 +20,13 @@
 .modal-dialog-button
   border-radius: 3px
   font-size: 9pt
-  $textColorBase()
+  color: $text()
   margin-left: 10px
   margin-right: 10px
   padding: 5px 20px 5px
 
 .modal-dialog-button:disabled
-  $textColorBase()
+  color: $text()
 
 .modal-dialog-button:focus
-  $textColorBase()
+  color: $text()

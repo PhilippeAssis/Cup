@@ -1,44 +1,67 @@
 // main: cinnamon.styl
 @import 'functions.styl'
 
-$link = #1A46A8
+$link = #1B2F5D
+$colorBase = rgba(45,45,45,1)
+$colorSecond = rgba(255,115,0,1)
+$colorThird = rgba(255,255,255,1)
+
 $linkHover = lightness($link,20%)
 
+$color($type)
+   if $type == 'base'
+      return $colorBase
+   else if $type == 'second' || $type == 'sec'
+      return $colorSecond
+   else if $type == 'third' || $type == 'thi'
+      return $colorThird
 
-$colorBase = rgba(42,48,68,.83)
-$colorBaseInvert = invert($colorBase)
-$backgroundColorBase = $colorBase
-$textColor = #ffffff
+$text($type = 'base')
+   if $dark($type) > 0
+      return #ffffff
+   else
+      return #333333
 
-$textColorBase()
-   color: $textColor
+$dark($type = 'base')
+   $color = $color($type)
+
+   if alpha($color) < 0.5
+      return 1
+
+   if luminosity($color) <= 0.3
+     return 2
+   if luminosity($color) < 0.6
+      return 1
+   return 0
+
+$border()
+   return invert($color('base'),50%)
 
 $fontSizeBase()
    font-size: 9pt
 
-$textShadow(blur = 0px)
-   text-shadow: black 1px 1px 2px blur
+$textShadow($type = 'base')
+   if $dark($type) == 1
+      text-shadow: black 1px 1px 5px 1px
 
-$boxShadow(blur = 10px)
-   box-shadow: black 0px 0px blur 0px
+$boxShadow(blur = 12px)
+   box-shadow: #000 0px 8px blur 0px
 
-$backgroundBase(alpha = 0.1)
-   backgroundColor(rgba($backgroundColorBase,alpha))
+$iconShadow($type = 'base')
+    if $dark($type) == 1
+      icon-shadow: black 1px 1px 5px 1px
 
-$borderBase($size = 1px)
-   border: $size solid $textColor
+$background($type,alpha = false)
+   $color = $color($type)
+   if alpha
+      backgroundColor(rgba($color,alpha))
+   else
+      backgroundColor($color)
 
-$borderRadius()
-   border-radius: 3px
+$radius()
+   3px
 
-
-
-$tooltipBackground()
-   background-color: rgba(0,0,0,0.7)
-
-$nofication_background()
-   backgroundColor($backgroundColorBase)
-
-
-
-$notification_color = #ffffff
+$alphaBase()
+   if alpha($color('base')) <= 0.1
+      return 50
+   return (alpha($color('base')) * 1.3)
