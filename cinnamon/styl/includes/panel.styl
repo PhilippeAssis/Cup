@@ -6,8 +6,8 @@
   color: $text('base')
   $textShadow('base')
   font-weight: normal
-  height: 35px
-  $background('base')
+  font-size: 9pt;
+  font-weight: normal;
 
 #panelLeft, #panelCenter
   spacing: 4px
@@ -26,7 +26,20 @@
   padding-left: 0px
   spacing: 0px
 
-.panel-top, .panel-bottom
+.panel-top
+  height: 30px
+  $background('base')
+  .system-status-icon
+    $iconShadow('base')
+    icon-size: 18px
+
+.panel-bottom
+  height 45px
+  padding-right 10px
+  $background('base')
+  .system-status-icon
+    $iconShadow('base')
+    icon-size: 18px
 
 .panel-status-button
   -natural-hpadding: 5px
@@ -89,8 +102,4 @@
 .panel-menu
   -boxpointer-gap: 0px
 
-.popup-menu-item-dot
-
-.system-status-icon
-  icon-size: 18px
-  $iconShadow('base')
+.popup-menu-item-dot{}

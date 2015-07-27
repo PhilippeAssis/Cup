@@ -1,7 +1,25 @@
 // out: ../cinnamon.css
 
-@import "functions.styl"
 @import "variables.styl"
+
+/* ###################################################################
+ * Section common with Gnome Shell
+ * ... contains a few cinnamon specific styles (rare occurences)
+ * ###################################################################*/
+stage
+  font-family: "Droid Sans", sans, sans-serif
+  color: $text('base')
+
+.cinnamon-link
+  color: $link
+  text-decoration: underline
+
+.cinnamon-link:hover
+  color: $link
+
+.label-shadow
+  color: $text()
+
 @import "includes/*.styl"
 // @import "includes/a*.styl"
 // @import "includes/b*.styl"

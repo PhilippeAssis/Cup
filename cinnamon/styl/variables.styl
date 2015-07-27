@@ -1,9 +1,8 @@
 // main: cinnamon.styl
-@import 'functions.styl'
 
 $link = #1B2F5D
-$colorBase = rgba(45,45,45,1)
-$colorSecond = rgba(255,115,0,1)
+$colorBase = rgba(45,45,45,.9)
+$colorSecond = rgba(17,205,194,1)
 $colorThird = rgba(255,255,255,1)
 
 $linkHover = lightness($link,20%)
@@ -65,3 +64,11 @@ $alphaBase()
    if alpha($color('base')) <= 0.1
       return 50
    return (alpha($color('base')) * 1.3)
+
+backgroundColor($color1, $color2 = false, $gradient = vertical)
+   if $color2 && $gradient
+      background-gradient-direction: $gradient
+      background-gradient-start: $color1
+      background-gradient-end: $color2
+   else
+      background-color: $color1

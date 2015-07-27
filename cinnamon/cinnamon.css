@@ -1,3 +1,21 @@
+/* ###################################################################
+ * Section common with Gnome Shell
+ * ... contains a few cinnamon specific styles (rare occurences)
+ * ###################################################################*/
+stage {
+  font-family: "Droid Sans", sans, sans-serif;
+  color: #fff;
+}
+.cinnamon-link {
+  color: #1b2f5d;
+  text-decoration: underline;
+}
+.cinnamon-link:hover {
+  color: #1b2f5d;
+}
+.label-shadow {
+  color: #fff;
+}
 .about-content {
   width: 550px;
   height: 250px;
@@ -15,7 +33,7 @@
   padding-right: 20px;
 }
 .about-scrollBox {
-  border: solid 1px #d2d2d2;
+  border: solid 1px rgba(210,210,210,0.9);
   border-radius: 4px;
 }
 .about-scrollBox-innerBox {
@@ -71,8 +89,8 @@
 }
 .switcher-arrow,
 .switcher-arrow:highlighted {
-  border-color: #d2d2d2;
-  color: #d2d2d2;
+  border-color: rgba(210,210,210,0.9);
+  color: rgba(210,210,210,0.9);
 }
 .applet-separator {
   padding: 8px 8px;
@@ -93,19 +111,6 @@
 .applet-icon {
   color: #fff;
   icon-size: 18px;
-}
-stage {
-  font-family: "Droid Sans", sans, sans-serif;
-}
-.cinnamon-link {
-  color: #1b2f5d;
-  text-decoration: underline;
-}
-.cinnamon-link:hover {
-  color: #1b2f5d;
-}
-.label-shadow {
-  color: #fff;
 }
 CinnamonTrayIcon {
   padding: 80px;
@@ -181,6 +186,8 @@ CinnamonTrayIcon {
 .calendar-day-left:rtl {
   border-right-width: 1px;
 }
+.calendar-work-day,
+.calendar-nonwork-day,
 .calendar-today {
   background-color: rgba(255,255,255,0.8);
 }
@@ -195,7 +202,7 @@ CinnamonTrayIcon {
 }
 .desklet-with-borders {
   padding: 10px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   background-color: #fff;
   color: #333;
   border-radius-bottomleft: 5px;
@@ -206,7 +213,7 @@ CinnamonTrayIcon {
 }
 .desklet-with-borders-and-header {
   padding: 10px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   background-color: #fff;
   color: #333;
   border-top: 1px;
@@ -218,7 +225,7 @@ CinnamonTrayIcon {
   border-radius-topleft: 5px;
   border-radius-topright: 5px;
   font-size: 9pt;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   border-bottom: 0px;
   background-color: #fff;
   color: #333;
@@ -245,7 +252,7 @@ CinnamonTrayIcon {
   background-color: rgba(255,255,255,0.8);
   font-size: 20pt;
   border-radius: 2px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   color: #fff;
 }
 .keyboard-key:grayed {
@@ -255,14 +262,14 @@ CinnamonTrayIcon {
 .keyboard-key:checked,
 .keyboard-key:hover,
 .keyboard-key:active {
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   background-color: #fff;
 }
 .keyboard-subkeys {
   color: #fff;
   padding: 5px;
   -arrow-border-radius: 3px;
-  -arrow-background-color: #2d2d2d;
+  -arrow-background-color: rgba(45,45,45,0.9);
   -arrow-border-width: 1px;
   -arrow-base: 20px;
   -arrow-rise: 10px;
@@ -290,7 +297,7 @@ CinnamonTrayIcon {
   color: #333;
 }
 #LookingGlassDialog .notebook-tab:selected {
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   border-radius: 4px;
   padding: 5px;
 }
@@ -306,7 +313,7 @@ CinnamonTrayIcon {
   border-radius: 4px;
 }
 .lg-obj-inspector-button:hover {
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
 }
 .lg-dialog .cinnamon-link {
   color: #1b2f5d;
@@ -329,7 +336,7 @@ CinnamonTrayIcon {
   spacing: 6px;
 }
 .lg-extension {
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   border-radius: 4px;
   padding: 4px;
 }
@@ -544,7 +551,7 @@ CinnamonTrayIcon {
 .notification-icon-button,
 .modal-dialog-button {
   color: #333;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   border-radius: 2px;
   background-color: #fff;
 }
@@ -554,7 +561,7 @@ CinnamonTrayIcon {
 .notification-button:focus,
 .notification-icon-button:focus,
 .modal-dialog-button:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
 }
 .notification-button:active,
 .notification-icon-button:active,
@@ -565,7 +572,7 @@ CinnamonTrayIcon {
 #notification {
   font-size: 9pt;
   border-radius: 4px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   background-color: #fff;
   box-shadow: #000 0px 8px 12px 0px;
   padding: 8px 8px 8px 8px;
@@ -623,7 +630,7 @@ CinnamonTrayIcon {
   padding: 4px;
   border-radius: 3px;
   color: #333;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   background-color: #fff;
   box-shadow: #000 0px 8px 12px 0px;
   selection-background-color: #333;
@@ -632,7 +639,7 @@ CinnamonTrayIcon {
   caret-size: 1px;
 }
 #notification StEntry:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   box-shadow: #000 0px 8px 12px 0px;
   background-color: #fff;
   selected-color: #333;
@@ -696,7 +703,7 @@ CinnamonTrayIcon {
   spacing: 12px;
 }
 .window-caption {
-  background-color: #2d2d2d;
+  background-color: rgba(45,45,45,0.9);
   color: #fff;
   box-shadow: #000 0px 8px 12px 0px;
   border: 1px transparent;
@@ -707,7 +714,7 @@ CinnamonTrayIcon {
   font-size: 9pt;
 }
 .window-caption#selected {
-  background-color: #2d2d2d;
+  background-color: rgba(45,45,45,0.9);
 }
 .window-close {
   background-image: url("close.png");
@@ -732,7 +739,7 @@ CinnamonTrayIcon {
   border: 1px solid rgba(128,128,128,0.4);
   border-right: 0px;
   border-radius: 9px 9px 0px 0px;
-  background-color: #2d2d2d;
+  background-color: rgba(45,45,45,0.9);
   padding: 8px;
 }
 .workspace-thumbnails-background:rtl {
@@ -768,10 +775,10 @@ CinnamonTrayIcon {
   color: #fff;
   transition-duration: 100;
   text-align: center;
-  background-color: #2d2d2d;
+  background-color: rgba(45,45,45,0.9);
 }
 .expo-background {
-  background-color: #2d2d2d;
+  background-color: rgba(45,45,45,0.9);
 }
 .expo-workspace-thumbnail-frame {
   border: 0px;
@@ -786,8 +793,8 @@ CinnamonTrayIcon {
 #panel {
   color: #fff;
   font-weight: normal;
-  height: 35px;
-  background-color: #2d2d2d;
+  font-size: 9pt;
+  font-weight: normal;
 }
 #panelLeft,
 #panelCenter {
@@ -811,8 +818,21 @@ CinnamonTrayIcon {
   padding-left: 0px;
   spacing: 0px;
 }
-.panel-top,
-.panel-bottom,
+.panel-top {
+  height: 30px;
+  background-color: rgba(45,45,45,0.9);
+}
+.panel-top .system-status-icon {
+  icon-size: 18px;
+}
+.panel-bottom {
+  height: 45px;
+  padding-right: 10px;
+  background-color: rgba(45,45,45,0.9);
+}
+.panel-bottom .system-status-icon {
+  icon-size: 18px;
+}
 .panel-status-button {
   -natural-hpadding: 5px;
   -minimum-hpadding: 5px;
@@ -835,7 +855,7 @@ CinnamonTrayIcon {
   -panel-corner-inner-border-width: 2px;
   -panel-corner-inner-border-color: transparent;
   -panel-corner-outer-border-width: 1px;
-  -panel-corner-outer-border-color: #d2d2d2;
+  -panel-corner-outer-border-color: rgba(210,210,210,0.9);
 }
 .panel-corner:active,
 .panel-corner:overview,
@@ -862,27 +882,23 @@ CinnamonTrayIcon {
 .panel-menu {
   -boxpointer-gap: 0px;
 }
-.popup-menu-item-dot,
-.system-status-icon {
-  icon-size: 18px;
-}
 #panel-launchers-box,
 .panel-launcher {
   margin: 1px;
-  padding: 4px;
+  padding: 4px 10px;
   transition-duration: 200;
 }
 .panel-launcher:hover,
 .panel-launcher-add-dialog-content-box,
 .panel-launcher-add-dialog-content-box-left,
 .panel-launcher-add-dialog-content-box-right {
-  background-color: #ff7300;
+  background-color: #11cdc2;
 }
 .popup-menu-boxpointer {
   -arrow-border-radius: 3px;
   -arrow-background-color: #fff;
   -arrow-border-width: 1px;
-  -arrow-border-color: #d2d2d2;
+  -arrow-border-color: rgba(210,210,210,0.9);
   -arrow-base: 25px;
   -arrow-rise: 11px;
   -arrow-color: #333;
@@ -931,11 +947,11 @@ CinnamonTrayIcon {
   spacing: 1em;
 }
 .popup-menu-item:active {
-  background-color: #ff7300;
+  background-color: #11cdc2;
   color: #fff;
 }
 .popup-menu-item:insensitive {
-  background-color: #ff7300;
+  background-color: #11cdc2;
   color: #fff;
 }
 .popup-image-menu-item {
@@ -1121,11 +1137,11 @@ StScrollBar StBin#trough {
   border-radius: 2px;
 }
 StScrollBar StButton#vhandle {
-  background-color: rgba(255,115,0,0.8);
+  background-color: rgba(17,205,194,0.8);
   border-radius: 2px;
 }
 StScrollBar StButton#hhandle {
-  background-color: rgba(255,115,0,0.8);
+  background-color: rgba(17,205,194,0.8);
   border-radius: 2px;
 }
 StScrollBar StButton#hhandle:hover,
@@ -1204,20 +1220,12 @@ StScrollBar StButton#vhandl:hover {
 #Tooltip {
   border-radius: 2px;
   padding: 5px 10px;
-  background-color: #ff7300;
+  background-color: #11cdc2;
   color: #fff;
   text-shadow: #000 1px 1px 5px 1px;
   font-size: 9pt;
   font-weight: normal;
   text-align: center;
-}
-.user-icon {
-  background-color: #fff;
-  border: $size solid #d2d2d2;
-  border-radius: 4px;
-  padding: 52px;
-  margin: 1000px;
-  spacing: 1em;
 }
 .user-label {
   font-size: 16px;
@@ -1239,7 +1247,7 @@ StScrollBar StButton#vhandl:hover {
 .sound-button {
   width: 20px;
   height: 20px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(210,210,210,0.9);
   border-radius: 2px;
   padding: 5px;
   background-color: #fff;
@@ -1315,8 +1323,9 @@ StScrollBar StButton#vhandl:hover {
   padding-right: 5px;
   transition-duration: 100;
 }
+.create_icon_texture,
 .window-list-item-box:hover {
-  background: #997d66;
+  background: #598583;
   color: #fff;
 }
 .window-list-item-box:active,
@@ -1324,7 +1333,7 @@ StScrollBar StButton#vhandl:hover {
 .window-list-item-box:focus {
   color: #fff;
   font-weight: bold;
-  background-color: #ff7300;
+  background-color: #11cdc2;
 }
 .window-list-item-demands-attention {
   background-color: rgba(255,255,255,0.5);
@@ -1355,7 +1364,7 @@ StScrollBar StButton#vhandl:hover {
 }
 .expo-workspaces-name-entry:focus {
   selected-color: #fff;
-  selection-background-color: #2d2d2d;
+  selection-background-color: rgba(45,45,45,0.9);
 }
 #workspaceSwitcher {
   spacing: 0px;
