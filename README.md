@@ -1,2 +1,1 @@
-# CupCoffeeOS
-# CupCoffee
+# Cup Theme for Cinnamon
