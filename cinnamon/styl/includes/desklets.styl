@@ -3,28 +3,28 @@
  * Desklets (desklet.js)
  * ===================================================================*/
 .desklet
-  color: $text('thi')
+  color: $text('for')
 
 .desklet-with-borders
   padding: 10px
-  border: 1px solid $border()
-  $background('thi')
-  color $text('thi')
-  border-radius-bottomleft: 5px
-  border-radius-bottomright: 5px
-  border-radius-topleft: 5px
-  border-radius-topright: 5px
-  $boxShadow()
+  color $text('for')
+  -boxpointer-gap: 14px;
+  background-blur: 5.0;
+  $background('for')
+  $textShadow('for')
+  $iconShadow('for')
 
 .desklet-with-borders-and-header
   padding: 10px
   border: 1px solid $border()
-  $background('thi')
-  color: $text('thi')
+  $background('for')
+  color $text('for')
   border-top: 1px
   border-radius-bottomleft: 5px
   border-radius-bottomright: 5px
   $boxShadow()
+  $textShadow('for')
+  $iconShadow('for')
 
 .desklet-header
   border-radius-topleft: 5px
@@ -32,14 +32,15 @@
   font-size: 9pt
   border: 1px solid $border()
   border-bottom: 0px
-  $background('thi')
-  color: $text('thi')
+  $background('for')
+  color: $text('for')
   padding: 5px
-  $boxShadow()
-
+  $textShadow('for')
+  $iconShadow('for')
+  
 .desklet-drag-placeholder
   border: 1px solid $link
-  background-color: rgba(61, 155, 218, 0.3)
+  background-color: $color('sec')
 
 /* ===================================================================
  * Clock Desklet (desklet.js)

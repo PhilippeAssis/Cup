@@ -1,9 +1,12 @@
 // main: cinnamon.styl
 
 $link = #1B2F5D
-$colorBase = rgba(41,41,41,1)
+$colorBase = rgba(41,41,41,0.5)
 $colorSecond = rgba(17,205,194,1)
 $colorThird = rgba(255,255,255,1)
+
+
+$deskletColor = rgba(255,255,255,1)
 
 $linkHover = lightness($link,20%)
 
@@ -14,6 +17,9 @@ $color($type)
       return $colorSecond
    else if $type == 'third' || $type == 'thi'
       return $colorThird
+   else if $type == 'four' || $type == 'for'
+      return alpha($colorThird,7%)
+
 
 $text($type = 'base')
    if $dark($type) > 0
@@ -31,6 +37,7 @@ $dark($type = 'base')
      return 2
    if luminosity($color) < 0.6
       return 1
+
    return 0
 
 $border()
@@ -40,15 +47,15 @@ $fontSizeBase()
    font-size: 9pt
 
 $textShadow($type = 'base')
-   if $dark($type) == 1
-      text-shadow: black 1px 1px 5px 1px
+   if $dark($type) > 0
+      text-shadow: rgba(#333,.64) 1px 1px 5px
 
 $boxShadow(blur = 12px)
    box-shadow: #000 0px 8px blur 0px
 
 $iconShadow($type = 'base')
-    if $dark($type) == 1
-      icon-shadow: black 1px 1px 5px 1px
+    if $dark($type) > 0
+      icon-shadow: rgba(#333,.64) 1px 1px 5px
 
 $background($type,alpha = false)
    $color = $color($type)
@@ -72,3 +79,6 @@ backgroundColor($color1, $color2 = false, $gradient = vertical)
       background-gradient-end: $color2
    else
       background-color: $color1
+
+$blur()
+   background-blur: 2.5;
